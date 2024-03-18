@@ -1,5 +1,10 @@
 import React from "react";
 
+export const metadata = {
+  title: "ABC || Admin",
+  description: "This is admin page",
+};
+
 const AdminPage = () => {
   return (
     <div>

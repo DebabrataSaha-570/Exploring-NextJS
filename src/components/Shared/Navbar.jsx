@@ -26,25 +26,33 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a>Item 1</a>
+              <Link href="/">Home</Link>
             </li>
             <li>
-              <a>Parent</a>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
+              <Link href="/about">About</Link>
             </li>
             <li>
-              <a>Item 3</a>
+              <details>
+                <summary>Dashboard</summary>
+                <ul className="p-2">
+                  <li>
+                    <Link href="/dashboard/admin">Admin</Link>
+                  </li>
+                  <li>
+                    <Link href="/dashboard/user">User</Link>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <Link href="/contact">Contact</Link>
+            </li>
+            <li>
+              <Link href="/gallery">Gallery</Link>
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <a className="btn btn-ghost text-xl">NextJS</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -69,6 +77,9 @@ const Navbar = () => {
           </li>
           <li>
             <Link href="/contact">Contact</Link>
+          </li>
+          <li>
+            <Link href="/gallery">Gallery</Link>
           </li>
         </ul>
       </div>

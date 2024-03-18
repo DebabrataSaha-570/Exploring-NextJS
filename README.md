@@ -13,4 +13,10 @@
 
 ### Core concepts
 
--
+- image, font optimize
+- metadata, import alias
+- Static site generation and server site rendering
+- data fetching
+- caching and revalidating
+- server site rendering with no-store
+- built in error handling (with dynamic error handling)
